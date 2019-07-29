@@ -1,6 +1,6 @@
 package cc.zerite.example
 
-import net.zeriteclient.zerite.injection.bootstrap.AbstractBootstrap
+import cc.zerite.client.injection.bootstrap.AbstractBootstrap
 
 class ExampleBootstrap : AbstractBootstrap() {
 

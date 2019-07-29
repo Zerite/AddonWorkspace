@@ -1,6 +1,6 @@
 package cc.zerite.example
 
-import net.zeriteclient.zerite.injection.bootstrap.impl.keybinds.CustomKeyBind
+import cc.zerite.client.injection.bootstrap.impl.keybinds.CustomKeyBind
 import org.lwjgl.input.Keyboard
 
 class ExampleKeyBind : CustomKeyBind("Example", Keyboard.KEY_J) {

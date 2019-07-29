@@ -36,13 +36,17 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.zerite:zerite:3f95be802a'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    compile 'org.jetbrains.kotlin:kotlin-reflect'
+    compile group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-core', version: '1.3.0-M1'
+
+    compile 'com.github.zerite:zerite:1ae9e9bdf0'
 }
 
 minecraft {
     version = '1.8.9'
     mappings = 'stable_22'
-    tweakClass = 'net.zeriteclient.zerite.injection.stages.tweaker.ZeriteTweaker'
+    tweakClass = 'cc.zerite.client.injection.stages.tweaker.ZeriteTweaker'
     runDir = 'run'
     makeObfSourceJar = true
 }
